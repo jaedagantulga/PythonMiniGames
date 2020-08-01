@@ -2,7 +2,7 @@
 # MILESTONE PROJECT 1 #
 ##################
 
-# create a Tic Tac Toe game for 2 human players
+# create a Tic Tac Toe game for 2 players
 
 # 2 players playing the game at the same computer
 # the board should be printed out every time a player makes a move
