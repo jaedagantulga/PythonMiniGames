@@ -83,9 +83,10 @@ def choose_first():
 	# variable assigned so that the first player can go first
 
 
-def space_check(board, position):
+
+def space_check(board,index1,index2):
 	# returns a boolean value of whether the space is available or not
-	return board[position] == ' '
+	return board[index1][index2] == ' '
 
 
 
@@ -100,24 +101,21 @@ def full_board_check(board):
 
 def player_choice(board):
 
-	# global position
-	# position = 1
-	# position = int(input('Where would you like to place? (1-9): '))
-
-	# if space_check(board, position) == False or game_board != [' ']*10:
-		# position = int(input('Where would you like to place? (1-9): '))
-		
-	# return position
-
-	position = 0
-
+	index1 = 0
+	index2 = 0
+	
 	# space_check checks if the space is available and position not in makes sure
 	## that while the board is empty it'll ask for the input
 
-	while space_check(board, position) == False or position not in (1,2,3,4,5,6,7,8,9):
-		position = int(input('Where would you like to place? (1-9): '))
+	while space_check(board,index1,index2) == False or index1 not in (1,2,3,4,5,6,7,8,9):
+		
+		index1 = int(input('Which row would you like place in (0,1, or 2)?: ')) 
+		index2 = int(input('And which column (1,2, or 3)?: '))
 
-	return position
+
+	return index1
+	return index2
+
 
 
 
