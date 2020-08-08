@@ -67,22 +67,38 @@ def space_check(board,index1,index2):
 
 def player_choice(board):
 
-	index1 = -1
-	index2 = -1
-	
+	index1 = 0
+	index2 = 0
+	position = 0
+
 	# space_check checks if the space is available and position not in makes sure
 	## that while the board is empty it'll ask for the input
 
-	while space_check(board,index1,index2) == False or index1 not in (0,1,2) or index2 not in (0,1,2):
+	while space_check(board,index1,index2) == False or position not in (1,2,3,4,5,6,7,8,9):
 		
-		index1 = int(input('Which row would you like place in (0,1, or 2)?: ')) 
-		index2 = int(input('And which column (0,1, or 2)?: '))
+		position = int(input('Where would you like to place? (1-9): '))
+
+	if position in (1,2,3):
+		index1 = 2
+		index2 = position-1
+
+	elif position in (4,5,6):
+		index1 = 1
+		index2 = position-4
+
+	else:
+		index1 = 0
+		index2 = position-7
+
+
+
 
 
 	return (index1,index2)
 	#tried returning a list and tried return individually like
 	# return index 1
 	# return index 2
+	# tried a list
 
 
 
