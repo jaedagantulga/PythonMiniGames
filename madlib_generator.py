@@ -29,4 +29,14 @@ def user_word_input():
 
 	return madlib_dict
 
-print(user_word_input())
+
+def madlib_template(dictionary):
+
+	print('\n'*2)
+	print('Today, every student has a computer small enough to fit into their ' + dictionary['noun'] + '.')
+	print("They can solve any math problem by simply pushing the computer's little " + dictionary['plural noun 1'] + '.')
+	print('Computers can add, multiply, divide, and ' + dictionary['verb 1'] + '.')
+	print('They can also ' + dictionary['verb 2'] + ' better than a human.')
+	print('Some computers are ' + dictionary['part of body'] + '.')
+	print('Others have a/an ' + dictionary['adjective 1'] + ' screen that shows all kinds of ' + dictionary['plural noun 2'] + ' and ' + dictionary['adjective 2'] + ' figures.')
+	print('\n'*2)
