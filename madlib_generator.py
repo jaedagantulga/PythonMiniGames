@@ -51,4 +51,20 @@ def replay():
 		return False
 
 
+# START OF MADLIB GENERATOR
+
+wants_to_play = True
+
+while wants_to_play:
+
+	print("\nLet's create a madlib! \nMadlibs are stories with words removed and replaced by blank spaces.")
+
+	madlib_dict = user_word_input()
+
+	print("\nHere's your madlib!")
+
+	madlib_template(madlib_dict)
+
+	wants_to_play = replay()
+
 
