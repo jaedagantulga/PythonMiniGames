@@ -40,3 +40,15 @@ def madlib_template(dictionary):
 	print('Some computers are ' + dictionary['part of body'] + '.')
 	print('Others have a/an ' + dictionary['adjective 1'] + ' screen that shows all kinds of ' + dictionary['plural noun 2'] + ' and ' + dictionary['adjective 2'] + ' figures.')
 	print('\n'*2)
+
+
+def replay():
+	replay_response = input('Would you like to create another madlib? Yes or No: ').capitalize()
+
+	if replay_response == 'Yes':
+		return True
+	else:
+		return False
+
+
+
