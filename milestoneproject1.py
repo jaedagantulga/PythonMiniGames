@@ -78,19 +78,17 @@ def player_choice(board):
 		
 		position = int(input('Where would you like to place? (1-9): '))
 
-	if position in (1,2,3):
-		index1 = 2
-		index2 = position-1
+		if position in (1,2,3):
+			index1 = 2
+			index2 = position-1
 
-	elif position in (4,5,6):
-		index1 = 1
-		index2 = position-4
+		elif position in (4,5,6):
+			index1 = 1
+			index2 = position-4
 
-	else:
-		index1 = 0
-		index2 = position-7
-
-
+		else:
+			index1 = 0
+			index2 = position-7
 
 
 
